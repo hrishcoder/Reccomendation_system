@@ -1,0 +1,23 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Hub</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles2.css') }}">
+</head>
+<body>
+
+<div class="home-container">
+    <h1>Welcome to Movie Hub</h1>
+    <p>Discover your favorite movies and get personalized recommendations!</p>
+
+    <div class="navigation-links">
+        <a href="{{ url_for('reccomend_view') }}">Get Recommendations</a>
+        <a href="{{ url_for('top100_movies') }}">Top 100 Movies</a>
+    </div>
+</div>
+
+</body>
+</html>
